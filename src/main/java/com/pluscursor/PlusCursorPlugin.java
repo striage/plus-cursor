@@ -10,7 +10,7 @@ import net.runelite.client.ui.overlay.OverlayManager;
 
 @Slf4j
 @PluginDescriptor(
-	name = "Example"
+	name = "Plus Cursor"
 )
 public class PlusCursorPlugin extends Plugin
 {
