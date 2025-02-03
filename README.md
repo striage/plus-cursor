@@ -5,7 +5,7 @@ A crosshair-style cursor that draws across the whole screen.
 
 Changes color when hovering over something interactable (including inventory items, the special attack button etc):
 
-Doesn't change color if the first entry in your right-click menu is either 'Walk here' or 'Cancel')
+Doesn't change color if the first entry in your right-click menu is either 'Walk here' or 'Cancel'
 
 ![image](https://github.com/user-attachments/assets/96fca9fb-91ea-4c7b-9f50-0d8f3ca20811)
 
