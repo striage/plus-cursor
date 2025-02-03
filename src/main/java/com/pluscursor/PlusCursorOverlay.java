@@ -9,6 +9,7 @@ import net.runelite.api.Client;
 import net.runelite.api.MenuAction;
 import net.runelite.api.MenuEntry;
 import net.runelite.api.Point;
+import net.runelite.client.ui.ClientUI;
 import net.runelite.client.ui.overlay.Overlay;
 import net.runelite.client.ui.overlay.OverlayLayer;
 import net.runelite.client.ui.overlay.OverlayPosition;
@@ -25,6 +26,12 @@ public class PlusCursorOverlay extends Overlay
 		setPosition(OverlayPosition.DYNAMIC);
 		setLayer(OverlayLayer.ALWAYS_ON_TOP);
 	}
+
+	@Inject
+	private PlusCursorConfig config;
+
+	@Inject
+	private ClientUI clientUI;
 
 	@Override
 	public Dimension render(Graphics2D graphics)
@@ -45,11 +52,11 @@ public class PlusCursorOverlay extends Overlay
 				if (topEntryType == MenuAction.WALK ||
 				topEntryType == MenuAction.CANCEL)
 				{
-					graphics.setColor(Color.CYAN);
+					graphics.setColor(config.defaultColor());
 				}
 				else
 				{
-					graphics.setColor(Color.RED);
+					graphics.setColor(config.interactColor());
 				}
 			} else {
 				graphics.setColor(Color.WHITE);
