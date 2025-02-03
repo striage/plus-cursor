@@ -58,7 +58,9 @@ public class PlusCursorOverlay extends Overlay
 				{
 					graphics.setColor(config.interactColor());
 				}
-			} else {
+			}
+			else
+			{
 				graphics.setColor(Color.WHITE);
 			}
 
